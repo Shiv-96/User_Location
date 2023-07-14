@@ -57,7 +57,7 @@ public class GlobalExceptionHandler {
 		error.setMessage(me.getMessage());
 		error.setDescription(me.getBindingResult().getFieldError().getDefaultMessage());
 		
-		return new ResponseEntity<>(error, HttpStatus.INTERNAL_SERVER_ERROR);
+		return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
 		
 	}
 	
