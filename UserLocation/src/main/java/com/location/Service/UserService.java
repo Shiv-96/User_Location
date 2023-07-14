@@ -21,4 +21,8 @@ public interface UserService {
 	
 	public User updatedTheUser(User user) throws UserException;
 	
+	public User addTheUserForReader(Integer userid, User user) throws UserException;
+	
+	public User updateTheUser(Integer userid, User user) throws UserException;
+	
 }
